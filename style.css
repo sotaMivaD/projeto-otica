@@ -1,5 +1,10 @@
+a{
+    text-decoration: none;
+    color: inherit;
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
 }
 #Topo nav{
     display: flex;
@@ -8,4 +13,24 @@ body{
 #Topo nav img{
     height: 50px;
     width: auto;
+}
+#Topo nav ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+#SecaoCapa img{
+    height:90vh;
+    width: auto;
+    margin: 0px;
+}
+#SecaoCapa p{
+    position: relative;
+    top:-500px;
+    left: 150px;
+    color: #c4c4c4;
+    font-size: 50px    
+}
+#SecaoCapa p span{
+    color: #fff;
 }
