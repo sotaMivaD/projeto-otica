@@ -1,0 +1,11 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Topo nav{
+    display: flex;
+    justify-content: space-around;
+}
+#Topo nav img{
+    height: 50px;
+    width: auto;
+}
