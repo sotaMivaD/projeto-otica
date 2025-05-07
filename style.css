@@ -9,6 +9,7 @@ body{
 #Topo nav{
     display: flex;
     justify-content: space-around;
+    margin: 10px;
 }
 #Topo nav img{
     height: 50px;
@@ -19,18 +20,79 @@ body{
     gap: 20px;
     list-style-type: none;
 }
-#SecaoCapa img{
-    height:90vh;
-    width: auto;
-    margin: 0px;
+#SecaoCapa {
+    position: relative; /* Necessário para o posicionamento absoluto funcionar */
+    height: 90vh;
+    overflow: hidden;
 }
-#SecaoCapa p{
-    position: relative;
-    top:-500px;
+
+#SecaoCapa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra sem distorcer */
+}
+
+#SecaoCapa p {
+    position: absolute;
+    top: 100px; /* Ajuste conforme necessário */
     left: 150px;
     color: #c4c4c4;
-    font-size: 50px    
+    font-size: 50px;
+    z-index: 1;
 }
+
 #SecaoCapa p span{
     color: #fff;
+}
+#SecaoProduto h1, p{
+    text-align: center;
+}
+#produtos{
+    gap: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+#produtos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.oculos {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.oculos img {
+    width: 200px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.oculos h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.oculos p {
+    font-weight: bold;
+    color: #000;
+}
+#SecaoProduto h2,ul{
+    text-align: center;
+    list-style-type: none;
+}
+#SecaoSobre{
+    margin-top: 50px;
+    text-align: center;
 }
