@@ -92,39 +92,109 @@ body{
     text-align: center;
     list-style-type: none;
 }
-#SecaoSobre{
-    margin-top: 50px;
-    text-align: center;
-}
-.filial {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    margin: 10px;
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.filial img {
-    width: 45%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.texto-filiais {
-    width: 45%;
+#SecaoSobre {
+    background-color: #f4f4f8;
+    padding: 50px 20px;
     text-align: center;
 }
 
-.texto-filiais h1 {
-    font-size: 1.5em;
+#SecaoSobre h1 {
+    font-size: 1.8em;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
-.texto-filiais p {
+.descricao-sobre {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
     font-size: 1em;
+    color: #333;
+}
+
+.grid-sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.grid-sobre .item {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-sobre .item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.grid-sobre .texto {
+    flex-direction: column;
+    text-align: center;
+}
+
+.grid-sobre .texto h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.grid-sobre .texto p {
+    font-size: 1em;
+    color: #333;
+}
+
+
+/* Seção Contato */
+
+#SecaoContato {
+    background-color: #0b0022;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#SecaoContato h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#SecaoContato p {
+    margin: 10px 0;
+}
+
+.contato-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.contato-box {
+    border: 1px solid #444;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    background-color: #150033;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.contato-box h2 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.contato-box p {
+    font-size: 0.95em;
+    margin: 8px 0;
 }
